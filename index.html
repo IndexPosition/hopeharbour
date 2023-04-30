@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Donate Me</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script>
+    function func1() {
+      location.href = "web_redirect.html";
+    }
+  </script>
+</head>
+
+<body style="scroll-behavior: smooth">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/Logo.jpg" alt="Logo with a hand shaped like a wave with boat floating on top" width="40" height="40" style="border-radius: 50%; margin-right: 10px; width: 40px; height: 40px; object-fit: cover;">
+        <span style="font-weight: bold; font-size: 24px;">Hope Harbour</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-danger" onclick="func1()">Donate</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="container">
+    <h1 style="text-align: center; font-weight: bold">Help the Suffering</h1>
+    <p style="text-align: center">
+      <b>Your donation will help us to provide food, shelter, and education to
+        the suffering.</b>
+    </p>
+    <div style="
+          background-image: url('assets/suffering.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 20em;
+        "></div>
+
+    <div style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #f2f2f2;
+          padding: 2em;
+          text-shadow: 1px 1px #000000;
+        ">
+      <div class="row" id="donation_list">
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem; border-radius: 10px">
+            <div style="
+                  background-image: url('assets/food.jpg');
+                  background-size: cover;
+                  background-position: center;
+                  height: 20em;
+                  border-radius: 10px;
+                  text-align: center;
+                ">
+              <div style="padding: 2em">
+                <h5 class="card-title" style="color: white">Food</h5>
+                <p class="card-text" style="color: white">
+                  Your donation will help us Feed the Needy
+                </p>
+                <button type="button" class="btn btn-primary" onClick="func1()">
+                  Donate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem; border-radius: 10px">
+            <div style="
+                  background-image: url('assets/shelter.jpg');
+                  background-size: cover;
+                  background-position: center;
+                  height: 20em;
+                  border-radius: 10px;
+                  text-align: center;
+                ">
+              <div style="padding: 2em">
+                <h5 class="card-title" style="color: white">Shelter</h5>
+                <p class="card-text" style="color: white">
+                  Your donation will help us to provide Shelter to Needy
+                </p>
+                <button type="button" class="btn btn-primary" onclick="func1()">
+                  Donate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem; border-radius: 10px">
+            <div style="
+                  background-image: url('assets/suffering.jpg');
+                  background-size: cover;
+                  background-position: center;
+                  height: 20em;
+                  border-radius: 10px;
+                  text-align: center;
+                ">
+              <div style="padding: 2em">
+                <h5 class="card-title" style="color: white">Education</h5>
+                <p class="card-text" style="color: white">
+                  Your donation will help us to provide education to the
+                  suffering.
+                </p>
+                <button type="button" class="btn btn-primary" onclick="func1()">
+                  Donate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-primary text-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Address</h5>
+          <p>
+            Hope Harbour<br />Amrita Vishwa Vidyapeetham<br />Chennai
+            Campus<br />Tamil Nadu, India
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>Phone: +91 8130382919<br />Email: hopeharbour@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled" style="display: table">
+            <li>
+              <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Backend.js"></script>
+</body>
+
+</html>
